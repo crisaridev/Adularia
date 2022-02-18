@@ -11,6 +11,12 @@
   --warning: #FF4842;
 }
 
+header img {
+  width: 140px;
+  height: 140px;
+  margin: 40px 100px ;
+}
+
 body {
   margin: 0;
   font-family: Tahoma;
@@ -31,8 +37,8 @@ a {
   background: linear-gradient(to bottom, rgba(87, 116, 242, 0.25),rgba(66,224,222,.25));
   display: flex;
   justify-content: center;
-  /* border-radius: 15px;
-  background-color: aliceblue; */
+  align-items: center;
+
 }
 .login-container {
   border-radius: 15px;
@@ -161,9 +167,8 @@ button:hover {
 }
 
 
-
-header img {
-  width: 140px;
-  height: 140px;
-  margin: 40px 100px ;
+.footer {
+  height: 195px;
+  background-color: rgba(66,224,222,.25);
+  /* background: linear-gradient(to bottom, rgba(87, 116, 242, 0.25),rgba(66,224,222,.25)); */
 }
