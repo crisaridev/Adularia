@@ -184,19 +184,17 @@ button:hover {
   /* background: linear-gradient(to bottom, rgba(87, 116, 242, 0.25),rgba(66,224,222,.25)); */
 }
 
-@media screen and (max-width: 922px){
+@media screen and (max-width: 889px){
 
 .logo{
-  border: 1px solid red;
   margin-left: 24px;
-
   }
 
 
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 747px){
   .login-container {
     width: 306px;
   }
@@ -211,13 +209,26 @@ button:hover {
 
 
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 619px){
+  header {
+    height: 80px;
+  }
   .logo{
-    width: 120px;
-    height: 120px;
-    margin: 24px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    margin: 10px 0px 0px 10px;
+  }
+  .login {
+    min-height: calc(100vh - 160px);
+
   }
   .login-container {
     width: 306px;
+    height: 519px;
+    margin-top: 5px;
+  }
+  .footer {
+    height: 80px;
   }
 }
