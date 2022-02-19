@@ -11,11 +11,6 @@
   --warning: #FF4842;
 }
 
-header img {
-  width: 140px;
-  height: 140px;
-  margin: 40px 100px ;
-}
 
 body {
   margin: 0;
@@ -32,13 +27,17 @@ a {
   text-decoration: none;
   color: var(--gray40);
 }
+.logo {
+  margin: 0;
+  width: 140px;
+  height: 140px;
+  margin: 40px 40px 13px 100px;
+}
 .login {
-  min-height: calc(100vh - 193px);
+  min-height: calc(100vh - 386px);
   background: linear-gradient(to bottom, rgba(87, 116, 242, 0.25),rgba(66,224,222,.25));
   display: flex;
   justify-content: center;
-  align-items: center;
-
 }
 .login-container {
   border-radius: 15px;
@@ -47,9 +46,10 @@ a {
   font-size: 19px;
   display: flex;
   justify-content: center;
-  width: 400px;
+  align-items: center;
   height: 638px;
-  /* align-items: center; */
+  width: 400px;
+
 }
 .login-media {
   width: 288px;
@@ -67,7 +67,6 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 19px;
-  margin-top: 122px;
   height: 50px;
 }
 .media-twitter {
@@ -83,6 +82,16 @@ a {
 }
 .media-twitter p {
   margin: 0;
+}
+
+.media-google:hover {
+  background-color: var(--gray10);
+  color: var(--gray50);
+}
+
+.media-twitter:hover {
+  background-color: var(--gray10);
+  color: var(--gray50);
 }
 
 .separacion {
@@ -156,7 +165,9 @@ button {
 }
 button:hover {
   border: 1px solid var(--gray50);
-  color: #000000;
+  color: var(--gray50);
+  background:linear-gradient(to left, rgba(66,224,222,.25),transparent);
+
 }
 
 .login-reset {
@@ -168,7 +179,45 @@ button:hover {
 
 
 .footer {
-  height: 195px;
+  height: 193px;
   background-color: rgba(66,224,222,.25);
   /* background: linear-gradient(to bottom, rgba(87, 116, 242, 0.25),rgba(66,224,222,.25)); */
+}
+
+@media screen and (max-width: 922px){
+
+.logo{
+  border: 1px solid red;
+  margin-left: 24px;
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 750px){
+  .login-container {
+    width: 306px;
+  }
+  .login-container {
+    display: block;
+    height: 519px;
+    width: 306px;
+  }
+  .login-media {
+    padding: 61px 10px;
+  }
+
+
+}
+@media screen and (max-width: 640px){
+  .logo{
+    width: 120px;
+    height: 120px;
+    margin: 24px;
+  }
+  .login-container {
+    width: 306px;
+  }
 }
